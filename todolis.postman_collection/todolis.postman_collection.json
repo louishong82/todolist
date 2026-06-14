@@ -1,0 +1,109 @@
+{
+  "info": {
+    "_postman_id": "40eafeaa-c731-40f2-86b6-22e546f8922f",
+    "name": "todolis - 部署",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "33574041"
+  },
+  "item": [
+    {
+      "name": "取得代辦",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://todolist-3hdt.onrender.com/todos",
+          "protocol": "https",
+          "host": [
+            "todolist-3hdt",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "todos"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "新增待辦",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"title\":\"今天要洗澡3\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://todolist-3hdt.onrender.com/todos",
+          "protocol": "https",
+          "host": [
+            "todolist-3hdt",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "todos"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "刪除全部待辦",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "https://todolist-3hdt.onrender.com/todos",
+          "protocol": "https",
+          "host": [
+            "todolist-3hdt",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "todos"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "編輯待辦",
+      "request": {
+        "method": "PATCH",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"title\":\"測試編輯\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://todolist-3hdt.onrender.com/todos/62332496-f7d2-478e-ae5e-8e8f417c1b36",
+          "protocol": "https",
+          "host": [
+            "todolist-3hdt",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "todos",
+            "62332496-f7d2-478e-ae5e-8e8f417c1b36"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
